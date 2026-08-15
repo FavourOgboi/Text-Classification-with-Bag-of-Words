@@ -4,11 +4,8 @@ A binary classifier that detects **insincere questions** on Quora — questions 
 
 Dataset: [Quora Insincere Questions Classification](https://www.kaggle.com/c/quora-insincere-questions-classification) (Kaggle competition, ~1.3M labeled questions).
 
-## Why this project is more than "ran a tutorial"
 
 The dataset is **~94% sincere / ~6% insincere**. A model that predicts "sincere" for every question scores ~94% accuracy while learning nothing. That makes accuracy a misleading headline metric here — the notebook explicitly compares the trained model against a majority-class baseline and a random baseline, and reports F1 as well as accuracy, so the "did this model actually learn anything" question has an honest answer instead of an inflated one.
-
-The ~1-point accuracy gain over the baseline is misleading on its own — the F1 gain (0.41 vs. 0.00) is what shows the model correctly identifies a meaningful share of insincere questions the naive baselines miss entirely.
 
 ## Pipeline
 
